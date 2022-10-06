@@ -54,3 +54,7 @@ const compareFn = (numOne, numTwo) => {
 compareFn(15, 5);
 
 // 6) Factorial function
+const factorial = (n) => n === 1 ? 1 : n * factorial(n - 1);
+
+console.log('Factorial of 5: ' + factorial(5));
+console.log('Factorial of 10: ' + factorial(10));
