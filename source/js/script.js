@@ -34,4 +34,23 @@ const isPerfect = (num) => {
     }
     s === num && s !== 0 ? console.log('Perfect number') : console.log('NOT a perfect number');
 };
-isPerfect(28);
+
+isPerfect(6);
+
+// 4) Create function which return number of arguments
+const returnArgs = (...args) => {
+    const arr = [];
+    arr.push(...args);
+    console.log(`Number of arguments in function: ${arr.length}`);
+};
+
+returnArgs(5, 6, 7, 8, 9, 10, 12);
+
+// 5) Create function which will compare two numbers
+const compareFn = (numOne, numTwo) => {
+    numOne < numTwo ? console.log(-1) : numOne > numTwo ? console.log(1) : numOne === numTwo ? console.log(0) : console.log('Some problem happened'); 
+};
+
+compareFn(15, 5);
+
+// 6) Factorial function
